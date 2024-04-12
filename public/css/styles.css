@@ -84,8 +84,16 @@ header {
 
 .content .contact-list .contact-element .contact-image {
     color: var(--white);
-    padding: 5px 10px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .contact-list .contact-element .contact-name {
+    width: 210px;
 }
 
 .content .contact-list .contact-element .contact-name,
