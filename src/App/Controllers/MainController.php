@@ -24,7 +24,7 @@ class MainController
         $contact = new Contact();
         $contact->setId(Helper::generateRandomId());
         $contact->setColor(Helper::getHexColor($_POST['color']));
-        $contact->setName($_POST['name']);
+        $contact->setName(Helper::formatName($_POST['name']));
         $contact->setNumber($_POST['number']);
         $contact->save();
 

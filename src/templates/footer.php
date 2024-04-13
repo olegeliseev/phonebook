@@ -5,7 +5,8 @@
 			</div>
 	</footer>
     <script src="https://kit.fontawesome.com/ac6250e557.js" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="/js/mask.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,15 @@ class Helper
         return bin2hex(random_bytes(8));
     }
 
+    public static function formatName($name): string
+    {
+        if(strlen($name) >= 20) {
+            $name = substr($name, 0, 17) . '...';
+        }
+
+        return $name;
+    }
+
     public static function getHexColor($color): string
     {
         switch ($color) {

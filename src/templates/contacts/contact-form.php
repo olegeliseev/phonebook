@@ -2,8 +2,8 @@
         <form action="/add" method="POST">
             <h3>Добавить контакт</h3>
             <div class="contact-form-inputs">
-                <input type="text" placeholder="Имя" name="name">
-                <input type="text" placeholder="+7 (999) 999-99-99" name="number">
+                <input type="text" placeholder="Имя" name="name" maxlength="50" required>
+                <input id="number" type="text" placeholder="+7 (999) 999-99-99" name="number" required>
             </div>
             <div class="contact-form-radio-colors">
                 <input class="radio-button" type="radio" name="color" value="blue" id="red" checked="checked">

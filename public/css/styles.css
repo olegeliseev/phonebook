@@ -68,6 +68,23 @@ header {
     overflow-y: scroll;
 }
 
+.content .contact-list .scroll-area .empty-area {
+    margin-top: 90px;
+}
+
+.content .contact-list .scroll-area .empty-area h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.content .contact-list .scroll-area .empty-area i {
+    display: block;
+    font-size: 60px;
+    margin-top: 30px;
+
+}
+
 .content .contact-list .scroll-area::-webkit-scrollbar {
     width: 0px;
 }

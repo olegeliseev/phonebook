@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <title>Телефонный справочник</title>
+    <script src="https://unpkg.com/imask"></script>
 </head>
 
 <body>
