@@ -96,6 +96,10 @@ header {
     width: 210px;
 }
 
+.content .contact-list .contact-element .contact-number {
+    width: 160px;
+}
+
 .content .contact-list .contact-element .contact-name,
 .content .contact-list .contact-element .contact-number {
     display: flex;

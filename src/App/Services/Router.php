@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use App\Exceptions\NotFoundException;
+
 class Router
 {
     public array $getRoutes = [];
@@ -20,7 +22,7 @@ class Router
     public function resolve()
     {
         $method = strtolower($_SERVER['REQUEST_METHOD']);
-        $url = $_SERVER['PATH_INFO'] ?? '/';
+        $url = $_SERVER['REQUEST_URI'] ?? '/';
 
         if ($method === 'get') {
             $fn = $this->getRoutes[$url] ?? null;
@@ -28,8 +30,7 @@ class Router
             $fn = $this->postRoutes[$url] ?? null;
         }
         if (!$fn) {
-            echo 'Page not found';
-            exit;
+            throw new NotFoundException();
         }
     
         echo call_user_func($fn);
