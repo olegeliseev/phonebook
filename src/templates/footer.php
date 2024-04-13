@@ -1,6 +1,6 @@
 <footer>
 			<div class="footer-content">
-				<a href="https://github.com/olegeliseev/mediabox/tree/main" target="_blank">olegeliseev</a>
+				<a href="https://github.com/olegeliseev/phonebook" target="_blank">olegeliseev</a>
 				<i class="fa-brands fa-github"></i>
 			</div>
 	</footer>
