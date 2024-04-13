@@ -11,7 +11,7 @@ class Helper
 
     public static function formatName($name): string
     {
-        if(strlen($name) >= 20) {
+        if(mb_strlen($name) >= 20) {
             $name = substr($name, 0, 17) . '...';
         }
 

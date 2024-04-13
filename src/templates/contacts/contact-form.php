@@ -6,7 +6,7 @@
                 <input id="number" type="text" placeholder="+7 (999) 999-99-99" name="number" required>
             </div>
             <div class="contact-form-radio-colors">
-                <input class="radio-button" type="radio" name="color" value="blue" id="red" checked="checked">
+                <input class="radio-button" type="radio" name="color" value="red" id="red" checked="checked">
                 <label class="radio-button-label" for="red"><span class="radio-button-red"></span></label>
 
                 <input class="radio-button" type="radio" name="color" value="orange" id="orange">
