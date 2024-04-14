@@ -66,6 +66,7 @@ header {
 
 .content .not-found-page h1 {
     margin-bottom: 30px;
+    color: var(--secondary-bg-color);
 }
 
 .content .contact-list {
