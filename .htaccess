@@ -1,4 +1,4 @@
 RewriteEngine on
 
-RewriteRule ^$ public/ [L]
-RewriteRule (.*) public/$1 [L]
+RewriteRule ^$ public_html/ [L]
+RewriteRule (.*) public_html/$1 [L]
