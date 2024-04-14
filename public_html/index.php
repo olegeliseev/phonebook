@@ -1,13 +1,10 @@
 <?php
 
 try {
-    //Для автозагрузки классов без композера
+    spl_autoload_register(function (string $className) {
+        require_once __DIR__ . '/../src/' . str_replace('\\', '/', $className) . '.php';
+    });
 
-    // spl_autoload_register(function (string $className) {
-    //     require_once __DIR__ . '/../src/' . str_replace('\\', '/', $className) . '.php';
-    // });
-
-    require_once __DIR__ . '/../vendor/autoload.php';
     require_once __DIR__ . '/../src/routes.php';
     
 } catch (\App\Exceptions\NotFoundException $e) {

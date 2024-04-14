@@ -12,7 +12,6 @@
 ## Требования к локальной установке
 
 * PHP 8.2+
-* Composer
 * Apache с настроенным DocumentRoot на папку /public (пример настройки ниже)
 
 ## Установка
@@ -36,14 +35,6 @@ $ git clone https://github.com/olegeliseev/phonebook.git
   </Directory>
 </VirtualHost>
 ```
-
-Перейдите в папку проекта и выполните:
-
-```sh
-$ composer install
-```
-
-Composer используется только для автозагрузки классов
 
 ## Функциональность проекта
 

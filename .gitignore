@@ -1,3 +1,2 @@
 /.vscode/
 git rm -r --cached ./.vscode/
-/vendor/
