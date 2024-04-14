@@ -10,6 +10,10 @@ class Db
 
     public function __construct()
     {
+        if(!file_exists($this->path)) {
+            file_put_contents($this->path, '[]');
+        }
+
         $storageFile = file_get_contents($this->path);
         $this->data = json_decode($storageFile, true);
     }
@@ -21,6 +25,9 @@ class Db
 
     public function saveData(array $obj): void
     {
+        if(empty($this->data)) {
+            $this->data = [];
+        }
         array_push($this->data, $obj);
         $jsonNewData = json_encode($this->data, JSON_PRETTY_PRINT);
         file_put_contents($this->path, $jsonNewData);
