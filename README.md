@@ -7,6 +7,7 @@
 Попробовать его в действии можно по ссылке: https://beget.com/ru
 
 ![main](https://github.com/olegeliseev/phonebook/assets/66223707/3c6f2be6-c3d3-442d-a3fe-795a436bf683)
+![main-empty](https://github.com/olegeliseev/phonebook/assets/66223707/59b89d96-5b2d-437f-ad0d-888d38dcd68b)
 
 ## Требования к локальной установке
 
