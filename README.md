@@ -12,7 +12,7 @@
 ## Требования к локальной установке
 
 * PHP 8.2+
-* Apache с настроенным DocumentRoot на папку /public (пример настройки ниже)
+* Apache с настроенным DocumentRoot на папку /public_html (пример настройки ниже)
 
 ## Установка
 
@@ -26,10 +26,10 @@ $ git clone https://github.com/olegeliseev/phonebook.git
 
 ```apacheconf
 <VirtualHost *:80>
-    DocumentRoot "/path/to/phonebook/public"
+    DocumentRoot "/path/to/phonebook/public_html"
     ServerName phonebook.loc
     
-  <Directory "/path/to/phonebook/public">
+  <Directory "/path/to/phonebook/public_html">
     AllowOverride All
     Require all granted
   </Directory>
